@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fresh Crate</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Eczar|IM+Fell+English|Quicksand" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+		<nav>
+	    <ul class="menu">
+				<p class="title">Fresh Crate</p>
+	      <li class="selected-menu">About</li>
+	      <li>Crates</li>
+	      <li class="modalBtn">Sign UP</li>
+	    </ul>
+		</nav>
+  </header>
+
+  <div class="landingPad">
+    <img src="img/full_crate.jpg" alt="farmer holding crate full of veggies">
+  </div>
+<!----------------- Modal -------->
+  <section id="theModal">
+		<button class="modalBtn" class="button">Sign Up</button>
+
+  <div id="simpleModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2>Order Form</h2>
+      </div>
+      <div class="modal-body">
+        <form class="orderForm">
+					<label for="firstName">First Name</label>
+						<input type="text" id="firstName" name="firstName">
+					<label for="lastName">Last Name</label>
+						<input type="text"id="lastName" name="lastName">
+					<label for="email">Email</label>
+						<input type="email" id="email" name="email">
+					<label for="phone">Phone Numeber</label>
+						<input type="tel" id="tel" name="phone">
+						<h3>Crates</h3>
+					<label for="packages">Fresh</label>
+						<input type="checkbox" id="checkbox" name="packages">
+
+						<label for="packages">Farmer</label>
+							<input type="checkbox" id="checkbox" name="packages">
+
+							<label for="packages">Family</label>
+								<input type="checkbox" id="checkbox" name="packages">
+
+				</form>
+      </div>
+      <div class="modal-footer">
+        <h3>Hand Picked for you!</h3>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+	<span>&copy; Samuel Lindsey 2017.</span>
+	<script src="https://code.jquery.com/jquery-3.2.1.js">
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
