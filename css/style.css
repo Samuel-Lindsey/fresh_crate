@@ -37,7 +37,7 @@ nav {
 /*************Modal Begins *****************/
 
 button.modalBtn {
-  background:coral;
+  background:#614051;
   padding:1em 2em;
   color:#fff;
   border:0;
@@ -73,17 +73,31 @@ button.modalBtn:hover{
 }
 
 .modal-header{
-  background:coral;
+  background: #614051;
   padding:15px;
   color:#fff;
 }
 
+label {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 0px;
+  font-size: 1.2rem;
+}
+
 .modal-body{
   padding:10px 20px;
+  display: flex;
 }
 
 .modal-footer{
-  background:coral;
+  background:#614051;
   padding:10px;
   color:#fff;
   text-align: center;
@@ -105,4 +119,34 @@ button.modalBtn:hover{
 @keyframes modalopen{
   from{ opacity: 0}
   to {opacity: 1}
+}
+
+/************* Validator Style *****************/
+
+/* This is our style for the invalid fields */
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
 }

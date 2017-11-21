@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Eczar|IM+Fell+English|Quicksand" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -35,13 +35,14 @@
           <h2>Order Form</h2>
       </div>
       <div class="modal-body">
-        <form class="orderForm">
+        <form novalidate class="orderForm">
 					<label for="firstName">First Name</label>
 						<input type="text" id="firstName" name="firstName">
 					<label for="lastName">Last Name</label>
 						<input type="text"id="lastName" name="lastName">
 					<label for="email">Email</label>
 						<input type="email" id="email" name="email">
+						<span class="error" aria-live="polite"></span>
 					<label for="phone">Phone Numeber</label>
 						<input type="tel" id="tel" name="phone">
 						<h3>Crates</h3>
@@ -53,6 +54,7 @@
 
 							<label for="packages">Family</label>
 								<input type="checkbox" id="checkbox" name="packages">
+							<button>Submit</button>
 
 				</form>
       </div>
