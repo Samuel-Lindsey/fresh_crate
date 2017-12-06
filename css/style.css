@@ -12,10 +12,11 @@ nav {
   justify-content: space-around;
   font-size: 1.4rem;
   margin: 10px 5px 0 5px;
+  padding: 0;
 }
 
 .selected-menu {
-  border-bottom: 1px solid red;
+  color: red;
 }
 
 
@@ -41,6 +42,7 @@ button.modalBtn {
   padding:1em 2em;
   color:#fff;
   border:0;
+  margin: auto;
 }
 
 button.modalBtn:hover{
@@ -134,6 +136,13 @@ input:focus:invalid {
 }
 
 /* This is the style of our error messages */
+
+input.telError {
+  border: solid 1px #900;
+  background-color: #FDD;
+  color: red;
+}
+
 .error {
   width  : 100%;
   padding: 0;
@@ -149,4 +158,25 @@ input:focus:invalid {
 
 .error.active {
   padding: 0.3em;
+}
+
+
+/******************** Media Query ******************/
+
+@media only screen and (max-width: 600px) {
+
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu p {
+    text-decoration: underline;
+  }
+
+  .landingPad img {
+    width: 100%;
+  }
+
+
 }

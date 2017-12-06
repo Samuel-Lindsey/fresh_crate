@@ -40,6 +40,16 @@ function outsideClick(e) {
 var form = document.getElementsByTagName('form')[0];
 var email = document.getElementById('email');
 var error = document.querySelector('.error');
+console.log(error);
+// var tel = document.getElementById('tel');
+
+// tel.addEventListener('tel', function (event) {
+//   if (!tel.value.match(/^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/)) {
+//     error.innerHTML = "";
+//     error.className = "error";
+//   }
+// },false);
+
 
 email.addEventListener('input', function (event) {
   if (email.validity.valid) {
@@ -55,3 +65,30 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
   }
 },false);
+
+// Script to vailidate phone Number
+
+// Set vars for phone number
+  var terror = document.querySelector('#tel');
+  console.log(terror);
+var tel = document.getElementById('tel');
+
+console.log(tel);
+
+//(/^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/)
+
+function validatePhone () {
+  if (!tel.value.match(/^[0-9]{10}$/)) {
+    terror.innerHTML = "";
+    terror.className = "telError";
+    console.log('function on');
+    return false;
+  }
+
+  if (tel.value.match(/^[0-9]{10}$/)) {
+    terror.innerHTML = "";
+    terror.className = "correct";
+    console.log('correct input');
+    return true;
+  }
+};

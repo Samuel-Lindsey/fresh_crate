@@ -26,7 +26,7 @@
   </div>
 <!----------------- Modal -------->
   <section id="theModal">
-		<button class="modalBtn" class="button">Sign Up</button>
+
 
   <div id="simpleModal" class="modal">
     <div class="modal-content">
@@ -44,7 +44,8 @@
 						<input type="email" id="email" name="email">
 						<span class="error" aria-live="polite"></span>
 					<label for="phone">Phone Numeber</label>
-						<input type="tel" id="tel" name="phone">
+						<input type="tel" onkeyup="validatePhone()" id="tel" name="phone">
+						<span class="terror" aria-live="polite"></span>
 						<h3>Crates</h3>
 					<label for="packages">Fresh</label>
 						<input type="checkbox" id="checkbox" name="packages">
@@ -64,6 +65,21 @@
     </div>
   </div>
   </section>
+
+	<section class="about">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue consequat venenatis. Pellentesque tristique hendrerit risus vitae aliquet. Aliquam in scelerisque lacus. Vestibulum vestibulum sit amet lorem eget mattis. Ut ultricies ante eu erat rutrum, vitae vehicula mauris consequat. Aliquam posuere quis ipsum vitae rutrum. Pellentesque vulputate neque ut venenatis aliquet. Donec dignissim auctor urna vitae porttitor. Sed consequat iaculis mi, fringilla vestibulum eros pharetra id. Morbi at finibus libero. Proin eu justo ac orci tincidunt facilisis eget quis nulla. Etiam at ultricies ante, in vestibulum ligula. Duis finibus laoreet odio, ac rutrum risus. Aenean pellentesque efficitur faucibus.
+		</p>
+
+		<p>Nam blandit id est eu interdum. Praesent nisi dolor, pharetra quis mollis ut, pulvinar eu purus. Cras vehicula eros leo, sed rutrum augue convallis vitae. Morbi in lobortis erat, nec porttitor velit. Nullam quis turpis sed risus semper dapibus. Suspendisse potenti. Sed eget nibh a massa sollicitudin hendrerit eu at est. Sed semper suscipit eros, quis accumsan neque aliquam quis. Quisque congue interdum velit eu interdum. Morbi et placerat felis. Proin hendrerit tellus nec porta posuere. Aenean a augue nec ligula ultricies egestas. Donec mattis eros id justo tempus, vitae efficitur nisl dignissim. Sed hendrerit purus sit amet magna vestibulum, sit amet dignissim tortor porta.
+		</p>
+
+		<p>Duis tempor vel elit eu finibus. Cras nulla elit, viverra non ante ac, iaculis molestie libero. Curabitur non aliquet orci. In dapibus lobortis consectetur. Aliquam eu vulputate ex. Fusce eget iaculis ex, at venenatis quam. Mauris quam diam, vestibulum rutrum est nec, ornare convallis lacus.
+		</p>
+
+
+	</section>
+
+	<button class="modalBtn" class="button">Sign Up</button>
 
   <footer>
 	<span>&copy; Samuel Lindsey 2017.</span>
