@@ -8,6 +8,7 @@ nav {
 
 .menu {
   list-style: none;
+  text-decoration: none;
   display: flex;
   justify-content: space-around;
   font-size: 1.4rem;
@@ -18,6 +19,14 @@ nav {
 .selected-menu {
   color: red;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
 
 
 .landingPad img {
@@ -35,7 +44,48 @@ nav {
   padding: 0;
 }
 
+.about {
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: row;
+}
+
+.about p {
+  text-indent: 50px;
+  margin-left: 10px;
+}
+
+/*************Pakeages Begins ****************/
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  width: 31%;
+}
+
+.col img {
+  display: flex;
+  max-height: 200px;
+  max-width: 300px;
+}
 /*************Modal Begins *****************/
+
+button.modalSubmit {
+  background:#614051;
+  padding:1em 2em;
+  color:#fff;
+  border:0;
+  margin: auto;
+  cursor: pointer;
+  display: block;
+}
 
 button.modalBtn {
   background:#614051;
@@ -161,6 +211,7 @@ input.telError {
 }
 
 
+
 /******************** Media Query ******************/
 
 @media only screen and (max-width: 600px) {
@@ -175,6 +226,13 @@ input.telError {
   }
 
   .landingPad img {
+    width: 100%;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
     width: 100%;
   }
 

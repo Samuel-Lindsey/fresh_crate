@@ -75,7 +75,6 @@ var tel = document.getElementById('tel');
 
 console.log(tel);
 
-//(/^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/)
 
 function validatePhone () {
   if (!tel.value.match(/^[0-9]{10}$/)) {
